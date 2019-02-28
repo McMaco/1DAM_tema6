@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class Flujos {
 	
+	
 	public static void miPrint(String cad) {
 		PrintWriter p = new PrintWriter(System.out);
 		p.write(cad);
@@ -18,11 +19,23 @@ public class Flujos {
 	public static String miLectura() {
 		
 		String cad = "";
+		int x = 0, i = 0;
 		BufferedReader br;
 		br = new BufferedReader(new InputStreamReader(System.in));
 		
 		try {
 			cad = br.readLine(); 
+			
+			while((x == 0) && (i < cad.length()) && (cad.length()>0)) {
+				if(cad.charAt(i) == ' ') {
+					x = i;
+				}
+				else {
+					i++;
+				}
+			}
+			
+			cad = cad.substring(0, x);
 		}
 		catch(IOException e) {
 			e.printStackTrace();
