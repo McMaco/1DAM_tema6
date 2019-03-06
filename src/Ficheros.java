@@ -12,13 +12,13 @@ public class Ficheros {
 		//NOMBRE Y APELLIDOS, DIRECCION, C.P, LOCALIDAD, PROVINCIA, TELEFONO, EDAD
 		
 		FileOutputStream f=null;
-		String nom = "David";
-		String ap = "McConnell Vicente";
-		String dir = "Poeta Jesús Rasueros, 21, 5ºA";
-		String cod = "37006";
-		String loca = "Salamanca";
-		String prov = "Salamanca";
-		String tel = "637626879";
+		String nom = "David\n";
+		String ap = "McConnell Vicente\n";
+		String dir = "Poeta Jesús Rasueros, 21, 5ºA,\n";
+		String cod = "37006\n";
+		String loca = "Salamanca\n";
+		String prov = "Salamanca\n";
+		String tel = "637626879\n";
 		String edad = "19";
 		char c = 0;
 		
