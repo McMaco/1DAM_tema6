@@ -12,6 +12,7 @@ public class Ficheros {
 		//NOMBRE Y APELLIDOS, DIRECCION, C.P, LOCALIDAD, PROVINCIA, TELEFONO, EDAD
 		
 		FileOutputStream f=null;
+		FileInputStream l=null;
 		String nom = "David\n";
 		String ap = "McConnell Vicente\n";
 		String dir = "Poeta Jesús Rasueros, 21, 5ºA,\n";
@@ -20,6 +21,7 @@ public class Ficheros {
 		String prov = "Salamanca\n";
 		String tel = "637626879\n";
 		String edad = "19";
+		String leer = "";
 		char c = 0;
 		
 		try {
@@ -105,6 +107,29 @@ public class Ficheros {
 		finally{
 			try {
 				f.close();
+			}
+			catch(IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		
+		
+		try {
+			l = new FileInputStream("datos.txt");
+			int size = l.available();
+			for(int i=0; i<size; i++) {
+				c = (char) l.read();
+				leer = leer+c;
+			}
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				System.out.println(leer);
+				l.close();
 			}
 			catch(IOException e) {
 				e.printStackTrace();
