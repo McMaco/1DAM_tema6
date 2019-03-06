@@ -34,7 +34,6 @@ public class Ficheros {
 		}
 		
 		try {
-			f = new FileOutputStream("datos.txt");
 			for(int i=0; i<ap.length(); i++) {
 				c = ap.charAt(i);
 				f.write((byte)c);
@@ -45,7 +44,6 @@ public class Ficheros {
 		}
 		
 		try {
-			f = new FileOutputStream("datos.txt");
 			for(int i=0; i<dir.length(); i++) {
 				c = dir.charAt(i);
 				f.write((byte)c);
@@ -56,7 +54,6 @@ public class Ficheros {
 		}
 		
 		try {
-			f = new FileOutputStream("datos.txt");
 			for(int i=0; i<cod.length(); i++) {
 				c = cod.charAt(i);
 				f.write((byte)c);
@@ -67,7 +64,6 @@ public class Ficheros {
 		}
 		
 		try {
-			f = new FileOutputStream("datos.txt");
 			for(int i=0; i<loca.length(); i++) {
 				c = loca.charAt(i);
 				f.write((byte)c);
@@ -78,7 +74,6 @@ public class Ficheros {
 		}
 		
 		try {
-			f = new FileOutputStream("datos.txt");
 			for(int i=0; i<prov.length(); i++) {
 				c = prov.charAt(i);
 				f.write((byte)c);
@@ -89,7 +84,6 @@ public class Ficheros {
 		}
 		
 		try {
-			f = new FileOutputStream("datos.txt");
 			for(int i=0; i<tel.length(); i++) {
 				c = tel.charAt(i);
 				f.write((byte)c);
@@ -100,7 +94,6 @@ public class Ficheros {
 		}
 		
 		try {
-			f = new FileOutputStream("datos.txt");
 			for(int i=0; i<edad.length(); i++) {
 				c = edad.charAt(i);
 				f.write((byte)c);
